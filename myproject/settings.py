@@ -51,13 +51,15 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'myproject',
-        'USER': 'postgres',
-        'PASSWORD': 'vinit@2003',
-        'HOST': 'localhost',  # or '127.0.0.1'
-        'PORT': '5432',       # Make sure this matches your PostgreSQL configuration
+        'NAME': 'student_management',  # Same as POSTGRES_DB
+        'USER': 'admin',               # Same as POSTGRES_USER
+        'PASSWORD': 'admin_password',  # Same as POSTGRES_PASSWORD
+        'HOST': 'localhost',           # Or use '127.0.0.1'
+        'PORT': '5434',                # The port you mapped, or the default
     }
 }
+
+
 
 
 AUTH_PASSWORD_VALIDATORS = [
